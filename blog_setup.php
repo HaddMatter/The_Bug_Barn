@@ -1,13 +1,9 @@
 <?php
 	$posts = 0;
+	require_once("functions.php");
+	
 	try{
-		$host = "localhost";
-		$dbname = "roaches";
-		$user = "root";
-		$pass = "ykcud217";
-				
-		$DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
-		$DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+		$DBH = mysql_start();
 			
 		$STH = $DBH->query('SELECT title, content, date from blog_posts');  
   		$STH->setFetchMode(PDO::FETCH_ASSOC);  

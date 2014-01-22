@@ -5,21 +5,17 @@
 	
 	<body>
 		<?php
-			require_once(".\PasswordHash.php");
+			require_once("PasswordHash.php");
+			require_once("functions.php");
 			
 			class blog{
 				function create(){
 					try{
-						$host = "localhost";
-						$dbname = "roaches";
-						$user = "root";
-						$pass = "";
 						date_default_timezone_set("America/New_York");
 						
 						$date = date("Y-m-d");
 						
-						$DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
-						$DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+						$DBH = mysql_start();
 						
 						$STH = $DBH -> prepare("INSERT INTO blog_posts ( title, content, date ) values (?, ?, ?)");
 						
@@ -39,18 +35,12 @@
 			class user{
 				function create(){
 					try{
-						$host = "localhost";
-						$dbname = "roaches";
-						$user = "root";
-						$pass = "";
+						$DBH = mysql_start();
 						$default_perm = "member";
 						
 						$hasher = new PasswordHash(8, false);
 						$password = $_POST["password"];
 						$hash = $hasher->HashPassword($password);
-						
-						$DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
-						$DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 						
 						$STH = $DBH -> prepare("INSERT INTO people ( username, password, first_name, last_name, email, permissions ) values (?, ?, ?, ?, ?, ?)");
 						
@@ -72,13 +62,7 @@
 				function check_login(){
 					
 					try{
-						$host = "localhost";
-						$dbname = "roaches";
-						$user = "root";
-						$pass = "";
-						
-						$DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
-						$DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+						$DBH = mysql_start();
 						
 						$STH = $DBH->query('SELECT username, password, first_name, last_name, permissions from people');  
   
@@ -105,23 +89,14 @@
 					}
 					catch(PDOException $e) {  
 						echo $e->getMessage();
-						
 					}  
-					
-					
 				}
 			}	
 			
 			class comment{
 				function create(){
 					try{
-						$host = "localhost";
-						$dbname = "roaches";
-						$user = "root";
-						$pass = "";
-						
-						$DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
-						$DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+						$DBH = mysql_start();
 						
 						$STH = $DBH -> prepare("INSERT INTO comments ( comment, subject ) values (?, ?)");
 						
@@ -140,13 +115,7 @@
 			class shop_item {
 				function create(){
 					try{
-						$host = "localhost";
-						$dbname = "roaches";
-						$user = "root";
-						$pass = "";
-						
-						$DBH = new PDO("mysql:host=$host;dbname=$dbname", $cost, $title, $desc, $img_location);
-						$DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+						$DBH = mysql_start();
 						
 						$STH = $DBH -> prepare("INSERT INTO shop_items ( cost, title, desc, img_location ) values (?, ?, ?, ?)");
 						
@@ -159,7 +128,6 @@
 					}
 					catch(PDOException $e) {  
 						echo $e->getMessage();
-						
 					}
 				}
 			}

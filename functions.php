@@ -13,6 +13,18 @@
 					}
 			}
 			
+			function mysql_start(){
+				$host = "localhost";
+				$dbname = "roaches";
+				$user = "root";
+				$pass = "ykcud217";
+				
+				$DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
+				$DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+				
+				return $DBH;
+			}
+			
 			function empty_field($required){
 				$error = false;
 				
