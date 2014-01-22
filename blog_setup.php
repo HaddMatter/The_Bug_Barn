@@ -4,7 +4,7 @@
 		$host = "localhost";
 		$dbname = "roaches";
 		$user = "root";
-		$pass = "";
+		$pass = "ykcud217";
 				
 		$DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
 		$DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
