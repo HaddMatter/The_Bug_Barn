@@ -1,11 +1,14 @@
 <html>
 	<head>
-		
+		<link type = "text/css" rel = "stylesheet" href = "stylesheet.css"/>
+		<link rel='stylesheet' type='text/css' href= "css/jqueryui.css"/>
+		<script src="js/jquery.js"></script>
+		<script src="js/jqueryui.js"></script>
+		<script src="header.js"></script>
 	</head>
 	
 	<body>
 		<div class = "header">
-			<img/>
 			<div class = "right_div"><p class = "right_no_separator"><a href = "cart.php"><strong>View cart</strong></a></p></div>
 			<div class = "right_div">
 				
@@ -24,23 +27,14 @@
 					}
 				?>
 			</div>
-			<img/>
-			<div class = "menu">
-				<div class = "menu_item">
-					<a href = "index.php"><p>Home</p></a>
-				</div>
-				<div class = "menu_item">
-					<a href = "about.php"><p>About Us</p></a>
-				</div>
-				<div class = "menu_item">
-					<a href = "contact.php"><p>Contact</p></a>
-				</div>
-				<div class = "menu_item">
-					<a href = "shop.php"><p>Shop</p></a>
-				</div>
-				<div class = "menu_item">
-					<a href = "faq.php"><p>FAQ</p></a>
-				</div>
+			
+			<ul id = "menu">
+				<li><a href = "index.php">home</a></li>
+				<li><a href = "about.php">About Us</a></li>
+				<li><a href = "contact.php">Contact</a></li>
+				<li><a href = "shop.php">Shop</a></li>
+				<li><a href = "faq.php">FAQ</a></li>
+			</ul>
 				<?php
 					if($_SESSION["permission"] == "admin"){
 						echo "<div class = 'menu_item'>";
@@ -48,7 +42,6 @@
 						echo "</div>";					
 					}
 				?>
-			</div>
 		</div>
 	</body>
 </html>

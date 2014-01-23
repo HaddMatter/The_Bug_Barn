@@ -10,9 +10,9 @@
 <html>
 	<head>
 		<link type = "text/css" rel = "stylesheet" href = "stylesheet.css"/>
-		<link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'/>
-		<script src="jquery.js"></script>
-		<script src="jquery-ui.js"></script>
+		<link rel='stylesheet' type='text/css' href= "css/jqueryui.css"/>
+		<script src="js/jquery.js"></script>
+		<script src="js/jqueryui.js"></script>
 		<script src="shop.js"></script>
 		<title>The Bug Barn - shop</title>
 	</head>
@@ -26,7 +26,7 @@
 		<div id = "shop_menu">
 			<h3>Dubia Roaches</h3>
 				<div>
-					<a href = "admin.php">Adult Roaches</a>
+					<p>Adult Roaches</p>
 					<p>Nits</p>
 					<p>Instant Colonies</p>
 				</div>
