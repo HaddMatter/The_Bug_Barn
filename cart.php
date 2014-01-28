@@ -10,7 +10,7 @@
 <html>
 	<head>
 		<link type = "text/css" rel = "stylesheet" href = "stylesheet.css"/>
-		<title>Neal's Roaches - Your Cart</title>
+		<title>The Bug Barn - Your Cart</title>
 	</head>
 	
 	<body>

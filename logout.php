@@ -15,7 +15,7 @@
 <html>
 	<head>
 		<link type = "text/css" rel = "stylesheet" href = "stylesheet.css"/>
-		<title>Neal's Roaches - shop</title>
+		<title>The Bug Barn - shop</title>
 	</head>
 	
 	<body>

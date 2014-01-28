@@ -24,7 +24,7 @@
 		
 			$comment_code = check_comment($_POST["subject"], $_POST["comments"]);
 			if($comment_code){
-				echo "<h1>Thank You for you input!</h1>";
+				echo "<h1>Thank You for you input! We will get back to you as soon as possible.</h1>";
 				$comment = new comment;
 				$comment->create();
 			}
