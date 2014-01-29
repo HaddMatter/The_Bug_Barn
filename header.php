@@ -9,7 +9,6 @@
 	
 	<body>
 		<div class = "header">
-			<div class = "right_div"><p class = "right_no_separator"><a href = "cart.php"><strong>View cart</strong></a></p></div>
 			<div class = "right_div">
 				
 					<?php
@@ -34,14 +33,13 @@
 				<li><a href = "contact.php">Contact</a></li>
 				<li><a href = "shop.php">Shop</a></li>
 				<li><a href = "faq.php">FAQ</a></li>
-			</ul>
+				<li><a href = "cart.php">Cart</a></li>
 				<?php
 					if($_SESSION["permission"] == "admin"){
-						echo "<div class = 'menu_item'>";
-							echo "<a href = 'admin.php'><p>Admin</p></a>";
-						echo "</div>";					
+						echo "<li><a href = 'admin.php'>Admin</a></li>";
 					}
 				?>
+			</ul>
 		</div>
 	</body>
 </html>
