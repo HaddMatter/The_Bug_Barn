@@ -111,6 +111,13 @@
 	clear: both;
 }
 
+.label{
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width 100%;	
+}
+
 .info{
 	background-color: black;
 	color: white;

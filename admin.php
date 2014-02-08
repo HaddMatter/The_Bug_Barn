@@ -43,6 +43,26 @@
 				<li><a href="#tabs-4">Change About Page</a></li>
 				<li><a href="#tabs-5">Add FAQ Info</a></li>
 			</ul>
+			<div id = "tabs-1">				
+				<div class = 'contact_container'>
+					<form action='blog_post.php' method='post'>
+						<label class = 'label'>Title</label>
+						<input type = 'text' name = 'Title'><br/>
+						<label class = 'label'>New Blog Post</label>
+						<textarea name='content' id='blog'></textarea><br />
+						<input type='submit' value='Submit' />
+					</form>
+				</div>
+			</div>
+			<div id = "tabs-2">
+				
+			</div>
+			<div id = "tabs-3">
+			</div>
+			<div id = "tabs-4">
+			</div>
+			<div id = "tabs-5">
+			</div>
 		</div>
 	</body>
 </html>

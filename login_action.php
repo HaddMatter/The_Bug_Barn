@@ -12,7 +12,7 @@
 <html>
 	<head>
 		<link type = "text/css" rel = "stylesheet" href = "stylesheet.css"/>
-		<title>The Bug Barn - FAQ</title>
+		<title>The Bug Barn - Welcome!</title>
 	</head>
 	
 	<body>
@@ -34,7 +34,9 @@
 				case 2:
 					echo "<h1>Oops! The username you provided does not match any in our records. you can register by clicking the link below.</h1><p><a href = 'register.php' style = 'color: green; text-align: center;'>Register</a></p>";
 					break;
-			}		
+			}
+			
+			echo $_SESSION["permission"];
 		?>
 	</body>
 </html>
