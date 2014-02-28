@@ -45,17 +45,44 @@
 			</ul>
 			<div id = "tabs-1">				
 				<div class = 'contact_container'>
-					<form action='blog_post.php' method='post'>
-						<label class = 'label'>Title</label>
-						<input type = 'text' name = 'Title'><br/>
-						<label class = 'label'>New Blog Post</label>
-						<textarea name='content' id='blog'></textarea><br />
-						<input type='submit' value='Submit' />
-					</form>
+					<label class = 'label'>Title</label>
+					<input type = 'text' name = 'title' id = 'title'><br/>
+					<label class = 'label'>New Blog Post</label>
+					<textarea name='content' id='blog'></textarea><br />
+					<button id="PostBlog" type='submit'>Submit<button/>
 				</div>
 			</div>
 			<div id = "tabs-2">
-				
+				<div class = 'contact_container'>
+					<p><select id = "user">
+						<?php
+							require_once("functions.php");
+	
+							try{
+								$DBH = mysql_start();
+			
+								$STH = $DBH->query('SELECT username from people');  
+  								$STH->setFetchMode(PDO::FETCH_ASSOC);  
+	  
+	
+								while($row = $STH->fetch()) {  
+									echo "<option>";
+									echo $row["username"];
+									echo "</option>";
+								}
+							}
+							catch(PDOException $e) {  
+								echo $e->getMessage();
+							}
+						?>
+					</select></p>
+
+					<p><select id = "perm">
+						<option value = 'member'>Member</option>
+						<option value = 'admin'>Admin</option>
+					</select></p>
+					<button id = "ChangePermission" type = "submit">Go!</button>
+				</div>
 			</div>
 			<div id = "tabs-3">
 			</div>

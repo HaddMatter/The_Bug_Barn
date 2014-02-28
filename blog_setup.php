@@ -20,14 +20,4 @@
 	catch(PDOException $e) {  
 		echo $e->getMessage();
 	}
-
-	if ($_SESSION["permission"] == "admin"){
-		echo "<div class = 'contact_container'><form action='blog_post.php' method='post'>
-			<label>title</label>
-			<input type = 'text' name = 'title'><br/>
-			<label>New Blog Post</label>
-			<textarea name='content' id='blog'></textarea><br />
-			<p><input type='submit' value='Submit' /></p>
-			</form></div>";
-	}
 ?>
