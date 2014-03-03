@@ -43,14 +43,9 @@
 		
 		<div id = "main_shop">
 			<?php
+				require_once("functions.php");
 				try{
-					$host = "localhost";
-					$dbname = "roaches";
-					$user = "root";
-					$pass = "";
-				
-					$DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
-					$DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+					$DBH = mysql_start();
 			
 					$STH = $DBH->query('SELECT cost, title, descr from shop_items');  
 					$STH->setFetchMode(PDO::FETCH_ASSOC);  

@@ -42,19 +42,25 @@
 				<li><a href="#tabs-3">Add Shop Item</a></li>
 				<li><a href="#tabs-4">Change About Page</a></li>
 				<li><a href="#tabs-5">Add FAQ Info</a></li>
+				<li><a href="#tabs-6">Create MySQL Db</a></li>
 			</ul>
 			<div id = "tabs-1">				
 				<div class = 'contact_container'>
-					<label class = 'label'>Title</label>
-					<input type = 'text' name = 'title' id = 'title'><br/>
-					<label class = 'label'>New Blog Post</label>
-					<textarea name='content' id='blog'></textarea><br />
-					<button id="PostBlog" type='submit'>Submit<button/>
+					<div>
+						<p class='label'>Title</p>
+						<input type="text" id="title">
+					</div>
+					<div>
+						<p class='label'>New Blog Post</p>
+						<textarea id="content"></textarea>
+					</div>
+					<button id="PostBlog" type='submit'>Submit</button>
 				</div>
 			</div>
 			<div id = "tabs-2">
 				<div class = 'contact_container'>
-					<p><select id = "user">
+					<p class='label'>Select a User</p>
+					<p><select class='sel' id = "user">
 						<?php
 							require_once("functions.php");
 	
@@ -76,20 +82,43 @@
 							}
 						?>
 					</select></p>
-
-					<p><select id = "perm">
+					<p class='label'>Select New Permission</p>
+					<p><select class='sel' id = "perm">
 						<option value = 'member'>Member</option>
 						<option value = 'admin'>Admin</option>
 					</select></p>
-					<button id = "ChangePermission" type = "submit">Go!</button>
+					<button id = "ChangePermission" type = "submit">Submit</button>
 				</div>
 			</div>
 			<div id = "tabs-3">
+				<div class = 'contact_container'>
+					<div>
+						<p class='label'>Title</p>
+						<input type="text" id="item_name">
+					</div>
+					<div>
+						<p class='label'>Description</p>
+						<input type="text" id="description">
+					</div>
+					<div>
+						<p class='label'>Cost</p>
+						<input type="text" id="cost">
+					</div>
+					<div>
+						<p class='label'>Image Location</p>
+						<input type="text" id="image">
+					</div>
+					<button id="CreateItem" type='submit'>Submit</button>
+				</div>
 			</div>
 			<div id = "tabs-4">
 			</div>
 			<div id = "tabs-5">
 			</div>
+			<div id = "tabs-6">
+			</div>
 		</div>
+		
+		<a href = "index.php">Back to Home</a>
 	</body>
 </html>

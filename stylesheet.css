@@ -112,10 +112,13 @@
 }
 
 .label{
-	float: left;
-	text-align: right;
-	margin-right: 15px;
-	width 100%;	
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.sel{
+	margin-top:0px;
+	padding-top:0px;
 }
 
 .info{
@@ -169,10 +172,6 @@
 	border-radius: 10px;
 }
 
-.ui-accordion-header{
-	background-color:  #4B6354
-}
-
 #shop_menu{
 	background-color: #4B6354;
 	width: 15%;
@@ -214,18 +213,14 @@
 	float: left;
 }
 
-#admin_menu{
-
+#content{
+	height: 200px;
 }
 
 h1{
     text-align: center;
 	clear: both;
 	display: block;
-}
-
-div p{
-	
 }
 
 a{
