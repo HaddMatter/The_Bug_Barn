@@ -1,6 +1,8 @@
 .header{
 	width: 100 %;
+	height: 40px;
 	margin: auto;
+	display: block;
 }
 
 .form{
@@ -8,76 +10,14 @@
 	margin: auto;
 }
 
-.menu{
-	border-radius: 0px;
-	background-color: #4B6354;
-	position: relative;
-	display: block;
-	clear: both;
-	text-align: right;
-	width: 100%;
-	height: 50px;
-}
-
-.menu_item{
-	display: inline-block;
-	background-color: #4B6354;
-	border-radius: 0px;
-	margin: 0px 10px 0px 10px;
-	clear: both;
-	color: #004400;
-	height: 100%;
-}
-
-.left_separator{
-    float: left;
-	clear: left;
-	border-top: 1px solid #FFFFFF;
-	display: block;
-	width: 15%;
-	background-color: #42623E;
-}
-
-.left_no_separator{
-	float: left;
-	clear: left;
-	display: inline-block;
-	width: 15%;
-	background-color: #42623E;
-}
-
 .right_div{
     display: inline-block;
-	margin: 0px 0px 0px 0px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0px 20px 0px 0px;
+	padding: 0px 0px 0px 0px;
 	position: relative;
 	float: right;
-}
-
-.right_separator{
-    float: right;
-    border-right: 1px solid #FFFFFF;
-	border-bottom: 1px solid #FFFFFF;
-    display: inline-block;
-    background-color: #4B6354;
-    color: #FFFFFF;
-    padding: 6px 8px 8px 8px;
-    border-radius: 2px;
-    margin: 0px 0px 0px 0px;
-}
-
-.right_no_separator{
-    float: right;
-	border-bottom: 1px solid #FFFFFF;
-    display: inline-block;
-    background-color: #4B6354;
-    color: #FFFFFF;
-    padding: 6px 8px 8px 8px;
-    border-radius: 2px;
-    margin: 0px 0px 0px 0px;
-}
-
-.right_link{
-	color: #FFFFFF
 }
 
 .container{
@@ -94,12 +34,6 @@
 }
 
 .container> form> input{
-	width: 100%;
-	clear: both;
-	height: 30px;
-}
-
-.contact_container> form> input{
 	width: 100%;
 	clear: both;
 	height: 30px;
@@ -133,7 +67,7 @@
 .blog{
 	display: block;
 	margin: 20px 20px 20px 20px;
-	border: 2px solid black;
+	border: 1px solid #173519;
 }
 
 .blog_header{
@@ -148,7 +82,7 @@
 }
 
 .shop_item{
-	background-color: #FFFFFF;
+	background-color: #173519;
 	overflow: auto;
 	float: left;
 	width: 25%;
@@ -160,7 +94,7 @@
 }
 
 .shop_item_nl{
-	background-color: #FFFFFF;
+	background-color: #173519;
 	overflow: auto;
 	float: left;
 	width: 25%;
@@ -173,43 +107,46 @@
 }
 
 #shop_menu{
-	background-color: #4B6354;
+	background-color: #b9b99c;
+	clear: both;
 	width: 15%;
-	height: 100%;
+	height: 75%;
 	display: inline-block;
 	float: left;
-	padding-left: 10px;
+	margin: 5px 5px 0px 0px;
+	padding-left: 0px;
 }
 
 #footer{
 	clear: both;
-	background-color: #92D2AA;
-	height: 300px;
+	background-color: #b9b99c;
+	height: 30px;
 	display: block;
 	text-align: center;
 }
 
 #main_blog{
-	background-color: #AAFFAA;
+	background-color: #99996f;
 	border-radius: 5px;
 	display: block;
-	clear: both;
+	clear: left;
 	margin: auto;
 	margin-top: 10px;
-	width:1200px;
+	width:100%;
 	padding: 10px 20px 20px 10px;
-	border: 2px solid #005500;
+	border: 1px solid #173519;
 }
 
 #main_shop{
 	width: 70%;
-	margin-right: 10%;
+	border-radius: 5px;
+	border: 1px solid #173519;
 	clear: right;
-	margin: 0px, 50px, 0px, 50px;
+	margin: 5px, 50px, 0px, 50px;
 	overflow: auto;
-	background-color: black;
+	background-color: #99996f;
 	padding-bottom: 25px;
-	display: inline-block;
+	display: block;
 	float: left;
 }
 
@@ -225,11 +162,11 @@ h1{
 
 a{
     text-decoration: none;
-	color: #FFFFFF;
+	color: #000000;
 }
 
 body{
-	background-color: #92D2AA;
+	background-color: #b9b99c;
 }
 
 *{

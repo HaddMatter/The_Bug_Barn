@@ -27,7 +27,7 @@
 			<h3>Dubia Roaches</h3>
 				<div>
 					<p>Adult Roaches</p>
-					<p>Nits</p>
+					<p>Nymphs</p>
 					<p>Instant Colonies</p>
 				</div>
 			<h3>Roach Accessories</h3>
@@ -52,18 +52,19 @@
 	  
 					$counter = 0;
 					while($row = $STH->fetch()) { 
-						if ( $counter == 3 ){
+						if ( $counter%3 == 0 ){
 							$class_name = "shop_item_nl";
-							$counter = 0;
 						}
 						else {
 							$class_name = "shop_item";
 						}
+						
 						$counter ++;
 						echo "<div class = " .$class_name. ">";
 						echo "<p>" .$row["title"]. "</p>";
 						echo "<p>$" .number_format($row["cost"], 2). "</p>";
 						echo "<p>" .$row["descr"]. "</p>";
+						echo "<button>Add to Cart</button>";
 						echo "</div>";
 					}
 				}

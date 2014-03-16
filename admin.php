@@ -120,5 +120,9 @@
 		</div>
 		
 		<a href = "index.php">Back to Home</a>
+		
+		<?php
+			require_once ("footer.php");
+		?>
 	</body>
 </html>

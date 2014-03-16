@@ -20,5 +20,9 @@
 	
 		<h1>Below you can find our FAQ and Hot-to's when it comes to roaches!</h1>
 		<p>here we will cover everything from care and breeding to nutritional information and keeping</p>
+		
+		<?php
+			require_once ("footer.php");
+		?>
 	</body>
 </html>

@@ -25,5 +25,9 @@
 	<body>
 		<h1>Oops! looks like you don't have permission to do that!</h1>
 		<h3><a href = "index.php">Click here to return to the homepage!</a></h3>
+		
+		<?php
+			require_once ("footer.php");
+		?>
 	</body>
 </html>

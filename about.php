@@ -20,5 +20,9 @@
 		
 		<h1>WELCOME!</h1>
 		<p>Hi! we're Neal's roaches. We sell dubia Roaches which are terrific feeders for your reptiles!</p>
+		
+		<?php
+			require_once ("footer.php");
+		?>
 	</body>
 </html>

@@ -19,5 +19,9 @@
 		?>
 		
 		<p>allow users to see items they have chosen to purchase and change quantities</p>
+		
+		<?php
+			require_once ("footer.php");
+		?>
 	</body>
 </html>

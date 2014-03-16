@@ -25,5 +25,9 @@
 		
 		<h1>You have successfully logged out!<h1>
 		
+		
+		<?php
+			require_once ("footer.php");
+		?>
 	</body>
 </html>

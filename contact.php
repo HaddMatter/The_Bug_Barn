@@ -29,6 +29,10 @@
 				<textarea name="comments" id="comments"></textarea><br />
 				<p><input type="submit" value="Submit" /></p>
 			</form>
-		</div
+		</div>
+		
+		<?php
+			require_once ("footer.php");
+		?>
 	</body>
 </html>

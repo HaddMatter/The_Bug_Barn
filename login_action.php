@@ -5,8 +5,6 @@
 	} else{
 		$_SESSION["count"]++;
 	}
-	
-	$_SESSION["username"] = $_POST["username"];
 ?>
 
 <html>
@@ -17,15 +15,22 @@
 	
 	<body>
 		<?php
-			require_once("header.php");
 			require_once("functions.php");
 			require_once("classes.php");
 			
 			$user = new user;
 			$error_code = $user->check_login($_POST["username"], $_POST["password"]);
+			if ($error_code == 0){
+				$_SESSION["username"] = $_POST["username"];
+			}
+			
+			require_once("header.php");
+			
+			
 			switch($error_code){
 				case 0:
 					echo "<h1>Welcome back!</h1>";
+					$_SESSION["username"] = $_POST["username"];
 					echo "<meta http-equiv='refresh' content='0;URL=index.php' />";
 					break;
 				case 1:
