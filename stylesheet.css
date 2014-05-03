@@ -3,6 +3,12 @@
 	height: 40px;
 	margin: auto;
 	display: block;
+	text-shadow: none;
+}
+
+.no_border{
+	text-shadow: none;
+	color: black;
 }
 
 .form{
@@ -107,7 +113,7 @@
 }
 
 #shop_menu{
-	background-color: #26592a;
+	background-color: #72c279;
 	clear: both;
 	width: 15%;
 	height: 75%;
@@ -119,7 +125,7 @@
 
 #footer{
 	clear: both;
-	background-color: #26592a;
+	background-color: white;
 	height: 30px;
 	display: block;
 	text-align: center;
@@ -166,11 +172,10 @@ a{
 }
 
 body{
-	background-color: #26592a;
+	background-color: white;
 }
 
 *{
     font-family: Tahoma;
-	color: white;
-	text-shadow: -1px 0 #173519, 0 1px #173519,1px 0 #173519, 0 -1px #173519	
+	color: Black;	
 }

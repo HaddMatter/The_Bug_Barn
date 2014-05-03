@@ -22,8 +22,8 @@
 		<div class = "form">
 			<div class="container">
 				<form action="login_action.php" method="post">
-					<label>Username:</label><input type="text" name="username"><br />
-					<label>Password:</label><input type="password" name="password"><br />
+					<label>Username:</label><input class="no_border" type="text" name="username"><br />
+					<label>Password:</label><input class="no_border" type="password" name="password"><br />
 					<p><input type="submit" /></p>
 				</form>
 			</div>
@@ -33,6 +33,7 @@
 					<ul>
 						<li>Passwords must be at least 8 letters long.</li>
 						<li>Passwords must contain at least one number and one letter.</li>
+						<li>Passwords are case sensitive.</li>
 					</ul>
 			</div>
 		</div>

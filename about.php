@@ -18,11 +18,11 @@
 			require_once ("header.php");
 		?>
 		
-		<h1>WELCOME!</h1>
-		<p>Hi! we're Neal's roaches. We sell dubia Roaches which are terrific feeders for your reptiles!</p>
+		<h1>About Us</h1>
+		<p margin="Auto">Welcome to the Bug Barn. We are a Manchester,NH based reptile supply company, specializing in feeder insects. We provide only the best feeders and devote ourselves to providing the best in nutritional feeders at reasonable prices.</p>
 		
 		<?php
 			require_once ("footer.php");
 		?>
 	</body>
-</html>
+</html> 
